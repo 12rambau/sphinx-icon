@@ -48,7 +48,8 @@ test = [
     "pytest",
     "beautifulsoup4",
     "pytest-regressions",
-    "pytest-cov"
+    "pytest-cov",
+    "defusedxml",
 ]
 doc = [
     "pydata-sphinx-theme",
@@ -89,6 +90,8 @@ convention = "google"
 
 [tool.coverage.run]
 source = ["sphinxcontrib.icon"]
+branch = true
+relative_files = true
 
 [tool.mypy]
 scripts_are_modules = true
